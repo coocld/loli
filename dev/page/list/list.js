@@ -1,12 +1,21 @@
 'use strict';
 define(['module', 'common/kernel/kernel'], function(module, kernel) {
-
+	var thispage = module.id.replace(/^[^/]+\/|\/[^/]+/g, ''),
+		dom = document.querySelector('#page>.content>.' + thispage);
+	kernel.scrollReload(dom);
+	var iconTop = document.getElementsByClassName('sort-top');
+	var iconBot = document.getElementsByClassName('sort-bot');
+	for(var i=0; i<iconTop.length; i++){
+		iconTop[i].appendChild(kernel.makeSvg('angle-up'));
+		iconBot[i].appendChild(kernel.makeSvg('angle-down'));
+	}
 	return {
+
 		onload: function(force) {
-		
+
 		},
 		onloadend: function() {
-			//this page is open
+			
 		},
         onunload: function() {
             //leveing this page

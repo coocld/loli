@@ -1,7 +1,210 @@
 @import "../../config.less";
-#page.list>.header>.back {
+#page.list>.header {
     display: none;
 }
 #page>.content>.list{
-    //add styles here
+	background: #edf2f6;
+	border-top: none;
+	overflow-y: hidden;
+	#loan-container{
+		position: absolute;
+	    top: 83px;
+	    bottom: 0;
+	    left: 0;
+	    right: 0;
+	    overflow-y: auto;
+	}
+	.loan-tab{
+		padding: 10px 10%;
+		height: 50px;
+		background: #fafafa;
+		border-bottom: 1px solid #e7e9ed;
+		.loan-tab-title{
+			display: -webkit-box;
+		    display: -ms-flexbox;
+		    display: -webkit-flex;
+		    display: flex;
+		    height: 30px;
+		    border: 1px solid #ff5c0c;
+		    border-radius: 20px;
+		    >a{
+				display: block;
+			    -webkit-box-flex: 1;
+			    -ms-flex: 1 1 auto;
+			    -webkit-flex: 1 1 auto;
+			    flex: 1 1 auto;
+			    font-size: 16px;
+			    line-height: 30px;
+			    text-align: center;
+			    width: 100%;
+			    height: 100%;
+			    background-color: white;
+			    color: #333;
+		    }
+		    >a.cur{
+		    	background: #ff5c0c;
+		    	color: #fff;
+		    }
+		    >span {
+			    -webkit-box-flex: 0;
+			    -ms-flex: 0 0 auto;
+			    -webkit-flex: 0 0 auto;
+			    flex: 0 0 auto;
+			    width: 1px;
+			    height: 100%;
+			    background-color: #ff5c0c;
+			    display: block;
+			}
+		}
+	}
+	.loan-list-cont{
+		padding-bottom: 20px;
+	}
+	.loan-item{
+		display: block;
+        background: #fff;
+        position: relative;
+        border-top: 1px solid #e7e9ed;
+        border-bottom: 1px solid #e7e9ed;
+        margin-bottom: 10px;
+        .loan-title{
+            padding: 20px 10px 5px 10px;
+            .name{
+                font-size: 16px;
+                color: #333;
+            }
+            .tag{
+                display: inline-block;
+                padding: 2px 4px;
+                margin-left: 3px;
+                color: #fff;
+                font-size: 12px;
+                border-radius: 2px;
+            }
+            .tag-1{
+                background: @themeColor;
+            }
+            .tag-2{
+                background: #ff2727;
+            }
+        }
+        .loan-info{
+            padding: 10px;
+            color: #999;
+            font-size: 14px;
+            .info-apr{
+                display: inline-block;
+                margin-right: 15px;
+                width: 30%;
+                float: left;
+                .apr{
+                    color: #ff5c0c;
+                    font-size: 18px;
+                    i{
+                        font-style: normal;
+                        font-size: 40px;
+                    }
+                }
+                .name{
+                    margin-top: 10px;
+                }
+            }
+            .info-line{
+                width: 1px;
+                height: 70px;
+                background: #ddd;
+                float: left;
+            }
+            .info-total{
+                width: 40%;
+                float: left;
+                margin-left: 20px;
+                padding-top: 22px;
+                .data-limit{
+                    margin-top: 10px;
+                }
+                i{
+                    font-style: normal;
+                    font-size: 18px;
+                }
+            }
+        }
+        .loan-bot{
+            height: 40px;
+            line-height: 40px;
+            padding-left: 10px;
+            color: #999;
+            border-top: 1px solid #ddd;
+            font-size: 14px;
+        }
+        .progressBar {
+            position: absolute;
+            right: 20px;
+            top: 20px;
+            width: 90px;
+            height: 90px;
+        }
+    } 
+    .loan-sort{
+    	display: -webkit-box;
+	    display: -ms-flexbox;
+	    display: -webkit-flex;
+	    display: flex;
+	    background: #edf2f6;
+	    height: 30px;
+	    .sort-item{
+	    	font-size: 14px;
+	    	text-align: center;
+	    	line-height: 30px;
+	    	-webkit-box-flex: 1;
+		    -ms-flex: 1 1 auto;
+		    -webkit-flex: 1 1 auto;
+		    flex: 1 1 auto;
+		    position: relative;
+		    cursor: pointer;
+		    .ndb{
+		    	width: 16px;
+			    height: 16px;
+			    line-height: 1;
+			    display: -moz-inline-stack;
+			    display: inline-block;
+			    vertical-align: middle;
+			    zoom: 1;
+			    position: relative;
+			    cursor: pointer;
+			    span {
+				    position: absolute;
+				    left: 4px;
+				}
+				.sort-top{
+					top: 0;
+				}
+				.sort-bot{
+					top: 8px;
+				}
+		    }
+		    svg {
+			    display: block;
+			    width: 12px;
+			    height: 6px;
+			    fill: #666;
+			}
+	    }
+	    .ndb-apr-desc{
+	    	color: #ff5c0c;
+	    	.sort-bot{
+	    		svg {
+				    fill: #ff5c0c;
+				}
+	    	}
+	    }
+	    .ndb-apr-asc{
+	    	color: #ff5c0c;
+	    	.sort-top{
+	    		svg {
+				    fill: #ff5c0c;
+				}
+	    	}
+	    }
+    } 
 }

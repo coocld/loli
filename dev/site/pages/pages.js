@@ -6,26 +6,26 @@ define({
 		'js': 'home', // 主调js
 		'html': 'home.html',
 		'css': 'home.less', // 主调css
-		'title': '首页' // 标题
+		'title': '精心优选' // 标题
 	},
 	'list': {
 		'js': 'list',
 		'html': 'list.html',
 		'css': 'list.less',
-		'title': '列表',
+		'title': '我要投资',
 		'back': 'home'
 	},
 	'user': {
 		'html': 'user.html',
 		'css': 'user.less',
-		'title': '用户中心',
+		'title': '我的资产',
 		'back': 'list'
 	},
 	'settings': {
 		'js': 'settings',
 		'html': 'settings.html',
 		'css': 'settings.less',
-		'title': '设置',
+		'title': '更多',
 		'back': 'user'
 	}
 });
