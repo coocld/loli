@@ -1,4 +1,6 @@
-# fusion-mobile
-simple SPA framework for mobile web
+# mjia
+打包到all.js只需要相应的文件添加到combine或者combine.cmd的命令行中
 
-this [demo](http://xxoo.github.com/fusion-mobile/) is directly built from the source with [siteBuild](https://github.com/xxoo/node-siteBuild)
+ node有更新可以直接用npm -g update
+ 
+ svg图标 fontawesome
