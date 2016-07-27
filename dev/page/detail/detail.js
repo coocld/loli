@@ -1,23 +1,19 @@
 'use strict';
-define(['module', 'common/kernel/kernel'], function(module, kernel) {
+define(['module', 'common/kernel/kernel', 'common/vue/vue'], function(module, kernel, Vue) {
 	var thispage = module.id.replace(/^[^/]+\/|\/[^/]+/g, ''),
 		dom = document.querySelector('#page>.content>.' + thispage);
 	kernel.scrollReload(dom);
-	var iconTop = document.getElementsByClassName('sort-top');
-	var iconBot = document.getElementsByClassName('sort-bot');
-	var circle = document.getElementsByClassName('circle');
-	var perimeter = Math.PI * 2 * 40;
-	for(var i=0; i<iconTop.length; i++){
-		iconTop[i].appendChild(kernel.makeSvg('angle-up'));
-		iconBot[i].appendChild(kernel.makeSvg('angle-down'));
-	}
 	return {
-
 		onload: function(force) {
-			for(var i=0; i<circle.length; i++){
+			var detailTitle = document.querySelector('.header>.title');
+			detailTitle.innerText="新手专享10号P";
+			 var vm = new Vue({
+			 	el:'#page',
+			 	data:{
+			 		apr:'12.80'
+			 	}
+			 });
 
-			circle[i].setAttribute('stroke-dasharray', 252 * 0.4 + " " + 252);
-			}
 		},
 		onloadend: function() {
 			

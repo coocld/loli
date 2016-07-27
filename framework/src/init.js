@@ -68,7 +68,7 @@ var browser = (function() {
 	}
 })();
 ! function() {
-	var prefix = '/fusion-mobile/',
+	var prefix = '/mjia/',
 	c = document.createElement('script');
 	c.src = prefix + 'framework/require-config.js?' + new Date().valueOf();
 	c.addEventListener('load', cfgLoad, false);

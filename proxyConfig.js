@@ -17,7 +17,7 @@ module.exports = {
 
 	// remote server address, always ends with /
 
-	remote: 'http://www.zalljinfu.com/',
+	remote: 'https://test.jia16.com/',
 
 
 	// 以下配置为本地静态文件模式
@@ -35,7 +35,7 @@ module.exports = {
 	// index: default document
 
 	local: {
-		prefix: '/mobile/',
+		prefix: '/mjia/',
 		root: './',
 		index: 'index.html'
 	},

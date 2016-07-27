@@ -15,6 +15,13 @@ define({
 		'title': '我要投资',
 		'back': 'home'
 	},
+	'detail': {
+		'js': 'detail',
+		'html': 'detail.html',
+		'css': 'detail.less',
+		'title': '投资详情',
+		'back': 'list'
+	},
 	'user': {
 		'html': 'user.html',
 		'css': 'user.less',
