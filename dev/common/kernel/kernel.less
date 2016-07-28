@@ -217,25 +217,21 @@ a {
     }
     > .btns {
         text-align: center;
-        margin-bottom: 20px;
+        height: 30px;
+        display: flex;
+        border-top: 1px solid #ddd;
         > a {
             display: inline-block;
-            border-radius: 4px;
-            line-height: 24px;
-            width: 50px;
-            margin: 0 15px;
-            vertical-align: top;
-            border-width: 1px;
-            border-style: solid;
+            flex:1;
+            line-height: 30px;
+            height: 100%;
             &.yes {
-                color: @primaryFrontground;
-                background-color: @primaryBackground;
-                border-color: @primaryBorder;
+                color: #ff5c0c;
+                border-right: 1px solid #ddd;
             }
             &.no {
-                color: @defaultFrontground;
-                background-color: @defaultBackground;
-                border-color: @defaultBorder;
+                color: #999;
+                
             }
         }
     }
@@ -258,7 +254,17 @@ a {
         display: none;
     }
 }
-#dialog > div,
+#dialog > div{
+    position: absolute;
+    margin: auto;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    top: 0;
+    border-radius: 3px;
+    background-color: @openWindowBackgrond;
+    color: @appText;
+}
 #loading > div {
     position: absolute;
     margin: auto;
@@ -267,19 +273,18 @@ a {
     bottom: 0;
     top: 0;
     border-radius: 8px;
-    background-color: @openWindowBackgrond;
-    box-shadow: 0 0 5px gray;
-    color: @appText;
+    background-color: rgba(40, 40, 40, 0.75);;
+    color:#fff;
 }
 #loading > div {
-    width: 200px;
-    height: 90px;
+    width: 120px;
+    height: 120px;
     text-align: center;
-    font-size: 16px;
+    font-size: 14px;
     line-height: 1;
     white-space: pre-wrap;
     > .ico {
-        margin: 15px auto;
+        margin: 25px auto;
         border: 4px solid silver;
         border-right-color: gray;
         border-radius: 100%;

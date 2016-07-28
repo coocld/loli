@@ -990,7 +990,7 @@ define(['common/touchslider/touchslider', 'common/pointerevents/pointerevents', 
 			}
 		};
 		kernel.showLoading = function(text) { //loading提示框, 每次调用引用计数＋1所以showLoading和hideLoading必须成对使用
-			loadingCtn.querySelector('div').lastChild.data = text ? text : '加载中...';
+			loadingCtn.querySelector('div').lastChild.data = text ? text : '数据加载中';
 			if (loadingRT === 0) {
 				loadingCtn.style.visibility = 'visible';
 				document.body.classList.add('mask');
