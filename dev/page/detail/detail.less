@@ -1,13 +1,16 @@
 @import "../../config.less";
-#page.list>.header {
+#page.detail>.header {
     display: block;
 }
+#page.detail > .navMenu{
+		display: none;
+	}
 #page>.content>.detail{
+	padding-bottom: 80px;
 	border-top: none;
 	background: #edf2f6;
 	overflow-y:auto; 
 	.detai-header{
-		height: 130px;
 		background: #ff5c0c;
 		color: #fff;
 		.detail-apr-name{
@@ -17,7 +20,196 @@
 		.detail-apr-num{
 			font-size: 35px;
 			text-align: center;
-			padding: 5px;
+			padding: 10px 0;
 		}
+		.detail-bot{
+			height:40px;
+			line-height: 40px;
+			border-top: 1px solid #f35400;
+			padding-left: 20px;
+		}
+		.lona-type-icon{
+			padding: 2px 4px;
+			background: #e64c00;
+			color: #fff;
+			position: absolute;
+			top: 1px;
+			right: 10px;
+			border-radius: 4px;
+		}
+	}
+	.weui_cell{
+		.weui_cell_bd{
+			p{
+				color: #999;
+			}
+		}
+		.weui_cell_ft{
+			color: #666;
+		}
+		.setp-item{
+		    -webkit-box-flex: 1;
+		    -ms-flex: 1 1 auto;
+		    -webkit-flex: 1 1 auto;
+		    flex: 1 1 auto;
+		    text-align: center;
+		    width: 100%;
+		    height: 100%;
+		    color: #999;
+		    .setp-icon{
+				width:35px;
+				height: 35px;
+				display: inline-block;
+			}
+			.setp-icon-1{
+				background: url(./images/icon1.png);
+				background-size: 100%;
+			}
+			.setp-icon-2{
+				background: url(./images/icon2.png);
+				background-size: 100%;
+			}
+			.setp-icon-3{
+				background: url(./images/icon3.png);
+				background-size: 100%;
+			}
+			p{
+				font-size: 13px;
+				line-height: 16px;
+			}
+		}
+
+		
+	}
+	.weui_cell_setp{
+		position: relative;
+		.setp-item-line {
+		    width: 64%;
+		    height: 1px;
+		    background: #c7c7c7;
+		    overflow: hidden;
+		    position: absolute;
+		    left: 21%;
+		    top: 28px;
+		}
+	}
+	.loan-range{
+		margin-top: 15px;
+		padding: 20px 15px;
+		background: #fff;
+		border-top:1px solid #e7e9ed;
+		border-bottom:1px solid #e7e9ed;
+		.loan-range-list{
+			margin-top: 15px;
+			height: 35px;
+			width: 100%;
+		    .range-item{
+		    	width: 20%;
+		    	height: 35px;
+			    background: url(./images/soc.png) no-repeat left bottom;
+			    background-size: 100%;
+			    float: left;
+			    display: inline-block;
+			    text-align: center;
+		    }
+		    .range-item-on{
+				width: 20%;
+		    	height: 35px;
+			    background: url(./images/socbtn.png) no-repeat left bottom;
+			    background-size: 100%;
+			}
+		    
+		}
+		
+		.invest-amount{
+			width: 50%;
+			padding: 0 20px;
+			margin: 0 auto;
+			text-align: center;
+			border-bottom: 1px solid #ddd;
+			.invest-amount-num{
+				color: #ff5c0c;
+				padding: 10px 0;
+			}
+		}
+		.loan-range-info{
+			margin-top: 15px;
+			.info-left{
+				float: left;
+				text-align: left;
+				i{
+					font-style: normal;
+					color: #ff5c0c;
+					display: block;
+					padding-top: 5px;
+				}
+			}
+			.info-right{
+				float: right;
+				text-align: right;
+				a{
+					color: #ff5c0c;
+					display: block;
+					padding-top: 5px;
+				}
+			}
+		}
+	}
+	.detail-info{
+		.icon-angle-up,.icon-angle-down{
+			display: inline-block;
+			height: 16px;
+			width: 16px;
+			float: right;
+			svg {
+			    display: block;
+			    width: 16px;
+			    height: 16px;
+			    fill: #999;
+			}
+		}
+		.detail-panel{
+			margin-top: 15px;
+			background: #fff;
+			border-top: 1px solid #e7e9ed;
+			border-bottom: 1px solid #e7e9ed;
+			padding: 10px;
+			.detail-panel-hd{
+				height: 40px;
+				line-height: 40px;
+			}
+			.detail-panel-title3{
+				border-bottom: 1px solid #e7e9ed;
+				color: #666;
+				font-weight: normal;
+				line-height: 26px;
+				margin-bottom: 10px;
+			}
+			.detail-panel-title4{
+				color: #666;
+				font-weight: normal;
+				line-height: 26px;
+			}
+			.detail-desc{
+				padding: 10px 0;
+				color: #333;
+				line-height: 24px;
+			}
+			.panecl-line{
+				height: 1px;
+				width: 100%;
+				background: #ddd;
+				margin-bottom: 10px;
+			}
+		}
+
+	}
+	.bot-btn{
+		padding: 10px; 
+		background: #fff;
+		position: fixed;
+		bottom: 0;
+		left: 0;
+		right: 0;
 	}
 }

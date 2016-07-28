@@ -1,8 +1,15 @@
 'use strict';
 define(['module', 'common/kernel/kernel', 'common/vue/vue'], function(module, kernel, Vue) {
 	var thispage = module.id.replace(/^[^/]+\/|\/[^/]+/g, ''),
-		dom = document.querySelector('#page>.content>.' + thispage);
+		dom = document.querySelector('#page>.content>.' + thispage),
+		angleUp = document.getElementsByClassName('icon-angle-up'),
+		angleDown = document.getElementsByClassName('icon-angle-down');
 	kernel.scrollReload(dom);
+	for(var i=0; i<angleUp.length; i++){
+		angleUp[i].appendChild(kernel.makeSvg('angle-up'));
+		angleDown[i].appendChild(kernel.makeSvg('angle-down'));
+	}
+	
 	return {
 		onload: function(force) {
 			var detailTitle = document.querySelector('.header>.title');
