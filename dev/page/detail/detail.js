@@ -1,24 +1,32 @@
 'use strict';
-define(['module', 'common/kernel/kernel', 'common/vue/vue'], function(module, kernel, Vue) {
+define(['module', 'common/kernel/kernel', 'common/vue/vue' ,'common/zepto/zepto'], function(module, kernel, Vue) {
 	var thispage = module.id.replace(/^[^/]+\/|\/[^/]+/g, ''),
 		dom = document.querySelector('#page>.content>.' + thispage),
 		angleUp = document.getElementsByClassName('icon-angle-up'),
-		angleDown = document.getElementsByClassName('icon-angle-down');
+		panelBtn = $(".detail-panel-hd");
 	kernel.scrollReload(dom);
 	for(var i=0; i<angleUp.length; i++){
-		angleUp[i].appendChild(kernel.makeSvg('angle-up'));
-		angleDown[i].appendChild(kernel.makeSvg('angle-down'));
+		angleUp[i].appendChild(kernel.makeSvg('angle-down'));
 	}
 	
 	return {
 		onload: function(force) {
-			var detailTitle = document.querySelector('.header>.title');
-			detailTitle.innerText="新手专享10号P";
+			var detailTitle = $('#page > .header > .title');
+			detailTitle.text("新手专享11号P");
 			 var vm = new Vue({
 			 	el:'#page',
 			 	data:{
 			 		apr:'12.80'
 			 	}
+			 });
+			 panelBtn.tap(function(){
+			 	$(this).next(".detail-panel-bd").toggle();
+			 	if($(this).next(".detail-panel-bd").css('display')=="none"){
+			 		$(this).children(".icon-angle-up").css({transform:'rotate(0deg)'});
+			 	}else if($(this).next(".detail-panel-bd").css('display')=="block"){
+			 		$(this).children(".icon-angle-up").css({transform:'rotate(180deg)'});
+			 	}
+			 	
 			 });
 
 		},

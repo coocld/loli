@@ -19,6 +19,11 @@
 			modules[n] = prefix + productRoot + n + '/' + modules[n];
 		}
 		cfg.paths = modules;
+		cfg.shim = {
+			'zepto': {
+			    exports: '$'
+			}
+		}
 	}
 	require.config(cfg);
 	//用于外部访问的基本信息
