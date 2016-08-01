@@ -12,5 +12,11 @@ define({
 		html: 'samplePopup2.html',
 		title: '示例弹窗2',
 		back: 'samplePopup'
+	},
+	'vouchersRules': {
+		js: 'vouchersRules',
+		html: 'vouchersRules.html',
+		css: 'vouchersRules.less',
+		title: '代金券使用规则'
 	}
 });

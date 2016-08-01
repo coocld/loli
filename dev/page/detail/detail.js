@@ -2,13 +2,20 @@
 define(['module', 'common/kernel/kernel', 'common/vue/vue' ,'common/zepto/zepto'], function(module, kernel, Vue) {
 	var thispage = module.id.replace(/^[^/]+\/|\/[^/]+/g, ''),
 		dom = document.querySelector('#page>.content>.' + thispage),
-		angleUp = document.getElementsByClassName('icon-angle-up'),
-		panelBtn = $(".detail-panel-hd");
+		angleUp = $('.icon-angle-up'),
+		panelBtn = $(".detail-panel-hd"),
+		questionIcon = $(".question-circle-o"),
+		angleRightIcon = $(".angle-right-icon"),
+		n = 0;
 	kernel.scrollReload(dom);
-	for(var i=0; i<angleUp.length; i++){
-		angleUp[i].appendChild(kernel.makeSvg('angle-down'));
-	}
 	
+	angleUp.append(kernel.makeSvg('angle-down'));
+	questionIcon.append(kernel.makeSvg('question-circle-o'));
+	angleRightIcon.append(kernel.makeSvg('angle-right'));
+
+	$(".coupons-qustion-btn").on('tap', function() {
+		kernel.openPopup('vouchersRules', ++n);
+	}, false);
 	return {
 		onload: function(force) {
 			var detailTitle = $('#page > .header > .title');

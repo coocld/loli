@@ -11,7 +11,7 @@ css库：https://weui.io/#/
 
  node有更新可以直接用npm -g update
  
- svg图标 fontawesome
+ svg图标 fontawesome: http://fontawesome.io/icons/
 
 
 
