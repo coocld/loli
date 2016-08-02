@@ -1,10 +1,50 @@
 @import "../../config.less";
 #page.detail>.header {
     display: block;
+    .rightMenuBtn{
+    	height: 30px;
+    }
+    .lona-type-icon{
+			padding: 4px 3px;
+			background: #e64c00;
+			color: #fff;
+			display: inline-block;
+			border-radius: 4px;
+		}
 }
 #page.detail > .navMenu{
 		display: none;
 	}
+#dialog {
+	.close{
+		display: none;
+	}
+	.balance-no {
+		width: 100%;
+		> p{
+			padding: 20px 0;
+			text-align: center;
+		}
+		> .btn-box{
+			text-align: center;
+		    height: 40px;
+		    width: 100%;
+		    border-top: 1px solid #ddd;
+			>a {
+			    width: 50%;
+			    line-height: 40px;
+			    height: 100%;
+			    display: inline-block;
+			    float: left;
+			   	&.recharge-btn{
+			   		background: #ff5c0c;
+			   		color: #fff;
+			   	}
+			}
+		}
+	}
+}
+
 #page>.content>.detail{
 	padding-bottom: 80px;
 	border-top: none;
@@ -28,15 +68,7 @@
 			border-top: 1px solid #f35400;
 			padding-left: 20px;
 		}
-		.lona-type-icon{
-			padding: 2px 4px;
-			background: #e64c00;
-			color: #fff;
-			position: absolute;
-			top: 1px;
-			right: 10px;
-			border-radius: 4px;
-		}
+		
 	}
 	.weui_cell{
 		
@@ -224,7 +256,7 @@
 		}
 
 	}
-	.bot-btn{
+	.loan-btn{
 		padding: 10px; 
 		background: #fff;
 		position: fixed;
@@ -276,4 +308,39 @@
 		display: block;
 		padding: 15px 15px 0 15px;
 	}
+	.transfer-cont{
+		    display: -webkit-box;
+		    display: -ms-flexbox;
+		    display: -webkit-flex;
+		    display: flex;
+	    margin-top: 15px;
+	    background: #fff;
+	    border-top: 1px solid #ddd;
+	    border-bottom: 1px solid #ddd;
+	    padding: 15px;
+	    .trans-item {
+	    	-webkit-box-flex: 1;
+		    -ms-flex: 1 1 auto;
+		    -webkit-flex: 1 1 auto;
+		    flex: 1 1 auto;
+		    .num{
+		    	display: block;
+		    	color: #ff5c0c;
+		    	padding-top: 5px;
+		    }
+	    }
+	    .trans-item-1{
+	    	text-align: left;
+	    }
+	    .trans-item-2{
+	    	text-align: center;
+	    	.num{
+	    		font-size: 18px;
+	    	}
+	    }
+	    .trans-item-3{
+	    	text-align: right;
+	    }
+	}
+
 }

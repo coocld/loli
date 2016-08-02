@@ -22,6 +22,13 @@ define({
 		'title': '投资详情',
 		'back': 'list'
 	},
+	'transfer': {
+		'js': 'transfer',
+		'html': 'transfer.html',
+		'css': 'transfer.less',
+		'title': '原始标的信息',
+		'back': 'detail'
+	},
 	'user': {
 		'html': 'user.html',
 		'css': 'user.less',

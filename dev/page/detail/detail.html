@@ -3,7 +3,6 @@
 		<div class="detail-apr-name">预期年化</div>
 		<div class="detail-apr-num">{{ apr }}%</div>
 		<div class="detail-bot">新手专享 首投返现</div>
-		<span class="lona-type-icon">固定收益</span>
 	</div>
 	<div class="weui_cells">
 	    <div class="weui_cell">
@@ -41,39 +40,51 @@
 	        </div>
 	    </div>
 	</div>
-	
-	<div class="loan-range">
-		<div class="invest-amount">
-			<div class="invest-amount-name">投资金额(元)</div>
-			<input type="number" name="invest-amount" class="invest-amount-num" value="1,000.00" placeholder="1,000.00">
+	<div class="transfer-cont">
+		<div class="trans-item trans-item-1">
+			预期收益(元)<span class="num">176.22</span>
 		</div>
-		<div class="loan-range-list">
-				<div class="range-item range-item-1 range-item-on">1000</div>
-				<div class="range-item range-item-2">2000</div>
-				<div class="range-item range-item-3">3000</div>
-				<div class="range-item range-item-4">4000</div>
-				<div class="range-item range-item-5">5000</div>
-				<div class="range-item range-item-6">6000</div>
-			
+		<div class="trans-item trans-item-2">
+			转让价格(元)<span class="num num-anmot">3,054.67</span>
 		</div>
-		<div class="loan-range-info">
-			<span class="info-left">
-				投资金额(元)
-				<i>165.00</i>
-			</span>
-			<span class="info-right">
-				可用余额(元)
-				<a class="balance" href="#">1,000.00  全投</a>
-			</span>
+		<div class="trans-item trans-item-3">
+			可用余额(元)<span class="num">1,000.00</span>
 		</div>
 	</div>
-	<a href="#" class="coupons-btn">
-		<span class="coupons-l">请选择代金券</span>
-		<span class="coupons-r">未使用<i class="angle-right-icon"></i></span>
-	</a>
-	<a href="javascript:;" class="coupons-qustion-btn">
-		代金券使用规则<i class="question-circle-o"></i>
-	</a>
+	<div class="no-transfer-cont">
+		<div class="loan-range">
+			<div class="invest-amount">
+				<div class="invest-amount-name">投资金额(元)</div>
+				<input type="number" name="invest-amount" class="invest-amount-num" value="1,000.00" placeholder="1,000.00">
+			</div>
+			<div class="loan-range-list">
+					<div class="range-item range-item-1 range-item-on">1000</div>
+					<div class="range-item range-item-2">2000</div>
+					<div class="range-item range-item-3">3000</div>
+					<div class="range-item range-item-4">4000</div>
+					<div class="range-item range-item-5">5000</div>
+					<div class="range-item range-item-6">6000</div>
+				
+			</div>
+			<div class="loan-range-info">
+				<span class="info-left">
+					投资金额(元)
+					<i>165.00</i>
+				</span>
+				<span class="info-right">
+					可用余额(元)
+					<a class="balance" href="#">1,000.00  全投</a>
+				</span>
+			</div>
+		</div>
+		<a href="javascript:;" class="coupons-btn">
+			<span class="coupons-l">请选择代金券</span>
+			<span class="coupons-r">未使用<i class="angle-right-icon"></i></span>
+		</a>
+		<a href="javascript:;" class="coupons-qustion-btn">
+			代金券使用规则<i class="question-circle-o"></i>
+		</a>
+	</div>
 	<div class="detail-info">
 		<div class="detail-panel">
 	        <div class="detail-panel-hd">
@@ -120,8 +131,8 @@
 	        </div>
 	    </div>
 	</div>
-	<div class="bot-btn">
-		<a href="javascript:;" class="weui_btn weui_btn_primary">我要投资</a>
+	<div class="loan-btn">
+		<a href="javascript:;" class="weui_btn weui_btn_primary investment-btn">我要投资</a>
 	</div>
 </div>
 

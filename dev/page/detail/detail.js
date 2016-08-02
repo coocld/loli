@@ -1,5 +1,5 @@
 'use strict';
-define(['module', 'common/kernel/kernel', 'common/vue/vue' ,'common/zepto/zepto'], function(module, kernel, Vue) {
+define(['module', 'common/kernel/kernel', 'common/vue/vue' ,'common/zepto/zepto'], function(module, kernel, Vue, zepto) {
 	var thispage = module.id.replace(/^[^/]+\/|\/[^/]+/g, ''),
 		dom = document.querySelector('#page>.content>.' + thispage),
 		angleUp = $('.icon-angle-up'),
@@ -16,14 +16,19 @@ define(['module', 'common/kernel/kernel', 'common/vue/vue' ,'common/zepto/zepto'
 	$(".coupons-qustion-btn").on('tap', function() {
 		kernel.openPopup('vouchersRules', ++n);
 	}, false);
+	$(".coupons-btn").on('tap', function() {
+		kernel.openPopup('chooseVouchers', ++n);
+	}, false);
+	
 	return {
 		onload: function(force) {
+			$(".rightMenuBtn").append('<span class="lona-type-icon">固定收益</span>').show();
 			var detailTitle = $('#page > .header > .title');
 			detailTitle.text("新手专享11号P");
 			 var vm = new Vue({
 			 	el:'#page',
 			 	data:{
-			 		apr:'12.80'
+			 		apr:'15.80'
 			 	}
 			 });
 			 panelBtn.tap(function(){
@@ -35,6 +40,20 @@ define(['module', 'common/kernel/kernel', 'common/vue/vue' ,'common/zepto/zepto'
 			 	}
 			 	
 			 });
+			
+
+			$(".investment-btn").on('tap', function(){
+				kernel.htmlDialog('<div class="balance-no"><p>您的可用资金不足</p><div class="btn-box"><a class="close-btn" href="javascript:;">再看看</a><a class="recharge-btn" href="javascript:;">去充值</a> </div></div>');
+				$(".close-btn").on('tap', function(){
+					kernel.closeDialog();
+				});
+				$(".recharge-btn").on('tap', function(){
+					kernel.closeDialog();
+					window.location.href='/#!list';
+				});
+			})
+			
+			
 
 		},
 		onloadend: function() {

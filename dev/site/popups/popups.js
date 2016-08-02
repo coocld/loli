@@ -18,5 +18,11 @@ define({
 		html: 'vouchersRules.html',
 		css: 'vouchersRules.less',
 		title: '代金券使用规则'
+	},
+	'chooseVouchers': {
+		js: 'chooseVouchers',
+		html: 'chooseVouchers.html',
+		css: 'chooseVouchers.less',
+		title: '请选择代金券'
 	}
 });

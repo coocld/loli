@@ -1,0 +1,210 @@
+@import "../../config.less";
+#page.transfer>.header {
+
+}
+#page.transfer > .navMenu{
+	display: none;
+}
+#dialog{
+	.popup-rule{
+		padding: 20px 15px;
+		h1{
+			text-align: center;
+		}
+		p{
+			line-height: 25px;
+			padding: 5px 0;
+		}
+	}
+	.trade-password-popup{
+		padding: 20px 15px;
+		background: #fff;
+		h2{
+			text-align: center;
+			font-weight: normal;
+		}
+		.weui_cells_form{
+			border-top: none;
+			border-bottom: none;
+			border: 1px solid #ddd;
+		}
+		.forgot-password-btn{
+			padding: 15px;
+			display: block;
+		}
+	}
+}
+
+#page>.content>.transfer{
+	background: #edf2f6;
+	border-top: none;
+	overflow-y:auto; 
+	.weui_cell{
+		
+		padding: 15px;
+		.weui_cell_bd{
+			p{
+				color: #999;
+			}
+		}
+		.weui_cell_primary{
+			-webkit-box-flex: 1.5;
+		    -webkit-flex: 1.5;
+		    flex: 1.5;
+		}
+		.weui_cell_ft{
+			color: #666;
+			-webkit-box-flex: 2;
+		    -webkit-flex: 2;
+		    flex: 2;
+		    text-align: left;
+
+		}
+	}
+
+	.loan-range{
+		margin-top: 15px;
+		padding: 20px 15px;
+		background: #fff;
+		border-top:1px solid #e7e9ed;
+		border-bottom:1px solid #e7e9ed;
+		.loan-range-list{
+			margin-top: 15px;
+			height: 35px;
+			width: 100%;
+		    .range-item{
+		    	width: 20%;
+		    	height: 35px;
+			    background: url(./images/soc.png) no-repeat left bottom;
+			    background-size: 100%;
+			    float: left;
+			    display: inline-block;
+			    text-align: center;
+		    }
+		    .range-item-on{
+				width: 20%;
+		    	height: 35px;
+			    background: url(./images/socbtn.png) no-repeat left bottom;
+			    background-size: 100%;
+			}
+		    
+		}
+		
+		.invest-amount{
+			width: 60%;
+			padding: 0 20px;
+			margin: 0 auto;
+			text-align: center;
+			border-bottom: 1px solid #ddd;
+			.invest-amount-num{
+				color: #ff5c0c;
+				padding: 10px 0;
+				text-align: center;
+				border: none;
+				width: 100%;
+			}
+		}
+		.loan-range-info{
+			margin-top: 15px;
+			.info-left{
+				float: left;
+				text-align: left;
+				i{
+					font-style: normal;
+					color: #ff5c0c;
+					display: block;
+					padding-top: 5px;
+				}
+			}
+			.info-right{
+				float: right;
+				text-align: right;
+				a{
+					color: #ff5c0c;
+					display: block;
+					padding-top: 5px;
+				}
+			}
+		}
+	}
+	.loan-btn{
+		padding: 20px 10px;
+	}
+	.transfer-sum-info{
+		padding-top: 20px;
+		text-align: center;
+		font-size: 13px;
+	}
+	.transfer-days{
+		margin-top: 15px;
+		background: #fff;
+		padding: 20px 15px;
+		.transfer-days-list{
+			color: #333;
+			padding-bottom: 10px;
+			height: 35px;
+			span{
+				display: inline-block;
+				margin: 0 4px;
+				&.days-item{
+					width: 25px;
+					height: 25px;
+					text-align: center;
+					line-height: 25px;
+					border-radius: 50%;
+					border:1px solid #ddd;
+					color: #999;
+					 
+					&.days-item-cur{
+						background: #ff5c0c;
+						color: #fff;
+					}
+				}
+				&.transfer-days-left{
+					margin-left: 0; 
+				}
+				&.transfer-days-right{
+					margin-right: 0; 
+				}
+			}
+		}
+		.transfer-days-tips{ 
+			color: #999;
+		}
+	}
+	.compute-btn{
+		padding: 20px 15px ;
+		line-height: 30px;
+		.calculator-icon{
+			display: inline-block;
+			width: 30px;
+			height: 30px;
+			float: left;
+			margin-right: 10px;
+			svg{
+				display: block;
+			    width: 30px;
+			    height: 30px;
+			    fill: #aaa;
+			}
+		}
+	}
+	.transfer-ok-tips{
+		padding: 15px;
+	}
+	.trade-password-popup{
+		display: none;
+	.weui_cell_primary{
+		-webkit-box-flex: 2;
+	    -webkit-flex: 2;
+	    flex: 2;
+	}
+	.weui_cell_ft{
+		color: #666;
+		-webkit-box-flex: 1;
+	    -webkit-flex: 1;
+	    flex: 1;
+		text-align: right;
+	}
+	}
+}

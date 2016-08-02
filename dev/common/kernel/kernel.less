@@ -69,6 +69,7 @@ a {
             font-size: 16px;
             line-height: 1;
             height: 16px;
+            width: 30%;
             color: @headerText;
             > svg {
                 height: 100%;
@@ -194,7 +195,6 @@ a {
     }
 }
 
-#dialog,
 #loading,
 #photoView {
     position: absolute;
@@ -204,6 +204,15 @@ a {
     top: 0;
     visibility: hidden;
     background-color: rgba(0,0,0,0.1);
+}
+#dialog {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    visibility: hidden;
+    background-color: rgba(0,0,0,0.5);
 }
 #dialog > div {
     max-width: 85%;
@@ -241,6 +250,9 @@ a {
         top: 5px;
         width: 20px;
         height: 20px;
+        svg{
+            fill: #666;
+        }
     }
     &.alert > .content {
         margin: 26px 20px 20px 16px;
@@ -510,19 +522,19 @@ a {
     pointer-events: none;
     text-align: center;
     opacity: 0;
-    bottom: 70px;
+    bottom: 100px;
     font-size: 14px;
     -webkit-transition: opacity 400ms ease-in-out;
     transition: opacity 400ms ease-in-out;
     > .text {
         display: inline-block;
-        color: @appBackground;
+        color: #fff;
         line-height: 20px;
         padding: 5px 12px;
-        background-color: rgba(0,0,0,0.6);
-        border-radius: 10px;
+        background-color: rgba(0,0,0,0.7);
+        border-radius: 5px;
         line-height: 20px;
-        padding: 5px 12px;
+        padding: 8px 12px;
         box-shadow: 0 0 3px silver;
         margin: 3px;
         white-space: pre-wrap;
