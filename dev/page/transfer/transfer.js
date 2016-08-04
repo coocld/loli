@@ -13,7 +13,9 @@ define(['module', 'common/kernel/kernel', 'common/vue/vue' ,'common/zepto/zepto'
 			//kernel.hint("最低10,000元起投哦");
 			//kernel.htmlDialog("<div class='popup-rule'><h1>计算方式</h1><p>1、转让价格=转让本金+应得收益+(－)涨价(降价)；应得收益每日增加，转让价格随之变化；</p><p>2、手续费由转出方承担，转出方实际收款=转让价格－手续费；</p><p>3、转让价格=转让本金+应得收益+(－)涨价(降价)；应得收益每日增加，转让价格随之变化；</p><p>4、手续费由转出方承担，转出方实际收款=转让价格－手续费。</p></div>");
 			//console.log(kernel.location.args.uid);
-			kernel.htmlDialog(tradePopupHtml);
+			//kernel.htmlDialog(tradePopupHtml);
+			//kernel.confirm("恭喜您，转让申请已成功提交！");
+
 		},
 		onloadend: function() {
 			
