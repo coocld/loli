@@ -35,3 +35,5 @@ kernel.confirm("恭喜您，转让申请已成功提交！"); 带确认按钮弹
 
 
 
+问题：
+1、 -webkit-overflow-scrolling: touch;
