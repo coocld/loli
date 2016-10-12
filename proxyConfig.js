@@ -17,7 +17,7 @@ module.exports = {
 
 	// remote server address, always ends with /
 
-	remote: 'https://test.jia16.com/',
+	remote: 'http://www.zalljinfu.com/',
 
 
 	// 以下配置为本地静态文件模式
@@ -35,7 +35,7 @@ module.exports = {
 	// index: default document
 
 	local: {
-		prefix: '/mjia/',
+		prefix: '/mjinfu/',
 		root: './',
 		index: 'index.html'
 	},
@@ -49,5 +49,5 @@ module.exports = {
 	// 本地监听端口
 	// the port this devProxy listens
 
-	port: 1990
+	port: 80
 };

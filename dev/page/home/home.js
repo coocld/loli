@@ -1,11 +1,10 @@
 'use strict';
-define(['module', 'common/kernel/kernel', 'common/touchslider/touchslider'], function(module, kernel, touchslider) {
+define(['module', 'common/kernel/kernel', 'common/touchslider/touchslider', 'common/zepto/zepto'], function(module, kernel, touchslider, zepto) {
 	var thispage = module.id.replace(/^[^/]+\/|\/[^/]+/g, ''),
 		dom = document.querySelector('#page>.content>.' + thispage),
 		banner = touchslider(dom.querySelector('.banner'));
-	var circle = document.getElementsByClassName('circle');
-	var perimeter = Math.PI * 2 * 40;
-	kernel.scrollReload(dom);
+
+	kernel.fixIosScrolling(dom);
 	banner.onchange = function() {
 		dom.querySelector('.nav').firstChild.data = navFormat(this.current, this.children.length);
 	};
@@ -37,10 +36,7 @@ define(['module', 'common/kernel/kernel', 'common/touchslider/touchslider'], fun
 	return {
 		onload: function(force) {
 			banner.startPlay(10000);
-			for(var i=0; i<circle.length; i++){
-
-			circle[i].setAttribute('stroke-dasharray', 252 * 0.9 + " " + 252);
-			}
+			
 		},
 		onunload: function() {
 			banner.stopPlay();

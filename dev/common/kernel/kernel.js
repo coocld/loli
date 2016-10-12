@@ -1047,9 +1047,7 @@ define(['common/touchslider/touchslider', 'common/pointerevents/pointerevents', 
 		dialogClose.appendChild(kernel.makeSvg('close'));
 		dialogClose.addEventListener('click', kernel.closeDialog, false);
 		dialogBox.querySelector('.yes').addEventListener('click', kernel.closeDialog, false);
-		dialogBox.querySelector('.no').addEventListener('click', function() {
-			kernel.closeDialog();
-		}, false);
+		
 		photoViewClose.appendChild(dialogClose.firstChild.cloneNode(true));
 		photoViewClose.addEventListener('click', kernel.hidePhotoView, false);
 
