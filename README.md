@@ -39,3 +39,6 @@ kernel.confirm("恭喜您，转让申请已成功提交！"); 带确认按钮弹
 1、 -webkit-overflow-scrolling: touch;
 
 2、font-size:14px;
+
+3、banner  item｛background-size: contain;
+ +       改成 background-size: cover;｝
