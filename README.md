@@ -13,7 +13,7 @@ css库：https://weui.io/#/
 
 ```
 
-打包到all.js只需要相应的文件添加到combine或者combine.cmd的命令行中
+打包到all.js只需要相应的文件添加到combine或者combine.cmd的命令行中，到framework文件中，执行./combine
 
 node有更新可以直接用npm -g update
  
