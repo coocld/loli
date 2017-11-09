@@ -35,7 +35,7 @@ module.exports = {
 	// index: default document
 
 	local: {
-		prefix: '/mjinfu/',
+		prefix: '/m/',
 		root: './',
 		index: 'index.html'
 	},
@@ -49,5 +49,5 @@ module.exports = {
 	// 本地监听端口
 	// the port this devProxy listens
 
-	port: 80
+	port: 1993
 };

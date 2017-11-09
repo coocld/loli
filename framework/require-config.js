@@ -10,7 +10,7 @@
 		siteVersion = "1.0.0",
 		//请确保debug第五个被赋值
 		debug = true,
-		prefix = '/mjinfu/',
+		prefix = '/m/',
 		cfg = {
 			baseUrl: prefix + srcRoot
 		};
