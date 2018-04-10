@@ -4,7 +4,21 @@
 
 css库：https://weui.io/#/    
 
+#  环境安装
 
+```
+node - 6.x
+
+启服务
+npm -g install devProxy
+
+打包工具
+npm -g install siteBuild@0.2.6
+
+依赖安装
+npm -g install uglify-js@2.7.3
+(删除sitebuld里的uglifyjs)
+```
 
 # mjia
 
